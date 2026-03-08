@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer a Client | Create Allied Health Services</title>
+    <meta name="description" content="Refer a client to Create Allied Health Services for NDIS, hospital discharge, mental health, housing, guardianship, aged care, and psychosocial support services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav nav--dark" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo"><span class="nav__logo-mark">C</span><span class="nav__logo-text">Create<span class="nav__logo-sub">Allied Health</span></span></a>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="about.html">About</a></li>
+                <li class="nav__dropdown"><a href="#" class="nav__dropdown-trigger">Client Services <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                    <ul class="nav__dropdown-menu"><li><a href="ndis-services.html">NDIS Services</a></li><li><a href="hospital-discharge.html">Hospital Discharge</a></li><li><a href="mental-health-support.html">Mental Health Support</a></li><li><a href="housing-support.html">Housing &amp; Accommodation</a></li><li><a href="guardianship-ncat.html">Guardianship &amp; NCAT</a></li><li><a href="aged-care-transitions.html">Aged Care Transitions</a></li><li><a href="psychosocial-support.html">Psychosocial Support</a></li></ul>
+                </li>
+                <li class="nav__dropdown"><a href="#" class="nav__dropdown-trigger">Professional <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></a>
+                    <ul class="nav__dropdown-menu"><li><a href="supervision.html">Clinical Supervision</a></li><li><a href="service-packages.html">Service Packages</a></li></ul>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="referrals.html" class="nav__cta">Refer a Client</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero hero--small">
+        <div class="hero__bg">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol class="breadcrumb__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span class="current">Referrals</span></li>
+                </ol>
+            </nav>
+            <h1 class="hero__title">Refer a Client</h1>
+        </div>
+    </header>
+
+    <!-- REFERRAL FORM -->
+    <section class="page-section">
+        <div class="container">
+            <div class="referral-layout">
+                <div class="referral-intro">
+                    <p class="section-eyebrow">Referrals</p>
+                    <h2 class="section-title section-title--left">Send Us a Referral</h2>
+                    <p>We accept referrals from hospitals, case managers, support coordinators, insurers, legal professionals, families, and individuals. Complete the form below and our team will be in touch to discuss how we can help.</p>
+                    <p>For urgent referrals, please call us directly on <a href="tel:1800930350"><strong>1800 930 350</strong></a>.</p>
+                </div>
+
+                <div class="contact__form-wrapper">
+                    <form id="referralForm">
+
+                        <h3 class="form-section__title">Referrer Details</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="referrerName">Your Name <span class="required">*</span></label>
+                                <input type="text" id="referrerName" name="referrerName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="referrerOrg">Organisation <span class="required">*</span></label>
+                                <input type="text" id="referrerOrg" name="referrerOrg" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="referrerPhone">Phone</label>
+                                <input type="tel" id="referrerPhone" name="referrerPhone">
+                            </div>
+                            <div class="form-group">
+                                <label for="referrerEmail">Email <span class="required">*</span></label>
+                                <input type="email" id="referrerEmail" name="referrerEmail" required>
+                            </div>
+                        </div>
+
+                        <h3 class="form-section__title">Client Details</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName">Client Name</label>
+                                <input type="text" id="clientName" name="clientName">
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone">Client Phone</label>
+                                <input type="tel" id="clientPhone" name="clientPhone">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientEmail">Client Email</label>
+                                <input type="email" id="clientEmail" name="clientEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceInterest">Services Interested In</label>
+                                <select id="serviceInterest" name="serviceInterest">
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="ndis">NDIS Services</option>
+                                    <option value="hospital-discharge">Hospital Discharge</option>
+                                    <option value="mental-health">Mental Health Support</option>
+                                    <option value="housing">Housing &amp; Accommodation</option>
+                                    <option value="guardianship">Guardianship &amp; NCAT</option>
+                                    <option value="aged-care">Aged Care Transitions</option>
+                                    <option value="psychosocial">Psychosocial Support</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hearAbout">How did you hear about us?</label>
+                            <select id="hearAbout" name="hearAbout">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="google">Google</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="professional-network">Professional Network</option>
+                                <option value="existing-client">Existing Client</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="referralMessage">Message <span class="required">*</span></label>
+                            <textarea id="referralMessage" name="referralMessage" rows="6" placeholder="Please provide details about the client's situation and support needs..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--lg btn--full">Send Referral</button>
+
+                        <p class="form-note">We aim to respond to all referrals within 72 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+        <div class="container">
+            <div class="cta-band__inner">
+                <div class="cta-band__content">
+                    <h2 class="cta-band__title">Need support?</h2>
+                    <p class="cta-band__text">Contact us to discuss how we can help, or refer a client directly.</p>
+                </div>
+                <div class="cta-band__actions">
+                    <a href="tel:1800930350" class="btn btn--primary btn--lg">Call 1800 930 350</a>
+                    <a href="referrals.html" class="btn btn--outline btn--lg">Refer a Client</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer"><div class="container"><div class="footer__inner">
+        <div class="footer__brand"><a href="index.html" class="nav__logo"><span class="nav__logo-mark">C</span><span class="nav__logo-text">Create<span class="nav__logo-sub">Allied Health</span></span></a><p class="footer__tagline">Empower Your Journey</p></div>
+        <div class="footer__links"><a href="about.html">About</a><a href="ndis-services.html">Services</a><a href="referrals.html">Referrals</a><a href="careers.html">Careers</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+        <div class="footer__acknowledgement"><p>We acknowledge the Gadigal people of the Eora Nation as the traditional custodians of the land on which we work.</p></div>
+        <div class="footer__legal"><p>&copy; 2025 Create Allied Health Services Pty Ltd. All rights reserved.</p><p>NDIS Registered Provider</p></div>
+    </div></div></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
