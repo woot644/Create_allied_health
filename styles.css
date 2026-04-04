@@ -3329,6 +3329,49 @@ section, .section { position: relative; }
 .mb-xl  { margin-bottom: var(--space-xl); }
 .mb-2xl { margin-bottom: var(--space-2xl); }
 
+/* FAQ SECTION */
+.faq-item {
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    transition: box-shadow var(--transition-fast);
+}
+.faq-item:hover {
+    box-shadow: var(--shadow-card);
+}
+.faq-item summary {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    color: var(--charcoal);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+    content: '+';
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--teal);
+    flex-shrink: 0;
+    transition: transform var(--transition-fast);
+}
+.faq-item[open] summary::after {
+    content: '−';
+}
+.faq-item .faq-answer {
+    padding: 0 1.5rem 1.25rem;
+    line-height: 1.7;
+    color: var(--charcoal-50);
+}
+
 .sr-only {
     position: absolute;
     width: 1px; height: 1px;
