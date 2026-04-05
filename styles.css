@@ -1995,14 +1995,14 @@ section, .section { position: relative; }
 .blog-card:hover .blog-card__image { transform: scale(1.03); }
 
 .blog-card__category {
-    position: absolute;
-    top: var(--space-sm); left: var(--space-sm);
+    display: inline-block;
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     background: var(--teal);
     color: var(--white);
+    margin-bottom: var(--space-sm);
     padding: 0.3rem 0.8rem;
     border-radius: var(--radius-xl);
     z-index: 1;
