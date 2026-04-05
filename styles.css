@@ -2017,7 +2017,7 @@ section, .section { position: relative; }
     font-weight: 500;
     color: var(--charcoal-50);
     margin-bottom: var(--space-xs);
-    display: flex;
+    display: none;
     align-items: center;
     gap: 0.4rem;
 }
@@ -3305,7 +3305,7 @@ section, .section { position: relative; }
 
 /* FAQ SECTION */
 .faq-item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     background: white;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-soft);
@@ -3318,7 +3318,7 @@ section, .section { position: relative; }
 .faq-item summary {
     font-family: var(--font-heading);
     font-size: 1.1rem;
-    padding: 1.25rem 1.5rem;
+    padding: 1.5rem 2rem;
     cursor: pointer;
     color: var(--charcoal);
     list-style: none;
@@ -3341,8 +3341,8 @@ section, .section { position: relative; }
     content: '−';
 }
 .faq-item .faq-answer {
-    padding: 0 1.5rem 1.25rem;
-    line-height: 1.7;
+    padding: 0.5rem 2rem 1.75rem;
+    line-height: 1.8;
     color: var(--charcoal-50);
 }
 
