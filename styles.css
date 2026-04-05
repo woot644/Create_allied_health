@@ -369,43 +369,17 @@ section, .section { position: relative; }
 .nav__logo {
     display: flex;
     align-items: center;
-    gap: 0.7rem;
     z-index: 10;
 }
 
-.nav__logo-mark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px; height: 42px;
-    border-radius: 12px;
-    background: var(--teal);
-    color: var(--white);
-    font-family: var(--font-display);
-    font-size: 1.3rem;
-    transition: var(--transition);
-    flex-shrink: 0;
-}
-
-.nav--scrolled .nav__logo-mark { background: var(--teal); }
-
-.nav__logo-text {
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--white);
-    line-height: 1.15;
+.nav__logo-img {
+    height: 44px;
+    width: auto;
     transition: var(--transition);
 }
 
-.nav--scrolled .nav__logo-text { color: var(--teal-deep); }
-
-.nav__logo-sub {
-    display: block;
-    font-weight: 400;
-    font-size: 0.72rem;
-    opacity: 0.8;
-    letter-spacing: 0.02em;
+.nav--scrolled .nav__logo-img {
+    height: 38px;
 }
 
 /* Nav links */
@@ -2828,8 +2802,7 @@ section, .section { position: relative; }
     gap: var(--space-md);
 }
 
-.footer .nav__logo-mark { background: var(--teal-light); }
-.footer .nav__logo-text { color: var(--white); }
+.footer .nav__logo-img { filter: brightness(0) invert(1); height: 38px; }
 
 .footer__brand {
     text-align: center;
