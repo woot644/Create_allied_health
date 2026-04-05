@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Allied Health — Theme Showcase</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-heading: 'DM Serif Display', Georgia, serif;
+    --font-body: 'Outfit', 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-body);
+    background: #f4f2ee;
+    color: #2d3436;
+    line-height: 1.6;
+  }
+
+  /* --- Header --- */
+  .page-header {
+    text-align: center;
+    padding: 60px 40px 40px;
+    border-bottom: 1px solid #d5d0c8;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .page-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #2d3436;
+    margin-bottom: 8px;
+  }
+  .page-header .subtitle {
+    font-size: 1.1rem;
+    color: #8b8580;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+  .page-header .brief {
+    font-size: 0.85rem;
+    color: #a09a94;
+    margin-top: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* --- Grid --- */
+  .themes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* --- Theme Column --- */
+  .theme-col {
+    padding: 48px 36px;
+    border-right: 1px solid #d5d0c8;
+    min-height: 100vh;
+  }
+  .theme-col:last-child { border-right: none; }
+
+  .theme-number {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    color: #a09a94;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .theme-name {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+  .theme-subtitle {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #8b8580;
+    margin-bottom: 16px;
+  }
+  .theme-desc {
+    font-size: 0.88rem;
+    color: #6b6560;
+    line-height: 1.65;
+    margin-bottom: 32px;
+  }
+
+  /* --- Swatches --- */
+  .swatches { margin-bottom: 36px; }
+  .swatch-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .swatch-block {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .swatch-block.light-bg {
+    border: 1px solid #d5d0c8;
+  }
+  .swatch-info {
+    flex: 1;
+  }
+  .swatch-role {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a09a94;
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+  .swatch-name {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #2d3436;
+    line-height: 1.2;
+  }
+  .swatch-hex {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    color: #8b8580;
+  }
+
+  /* --- Section Labels --- */
+  .section-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #a09a94;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
+
+  /* --- Sample Card --- */
+  .sample-card {
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .card-accent-bar {
+    height: 5px;
+    width: 100%;
+  }
+  .card-body {
+    padding: 24px;
+  }
+  .card-heading {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .card-text {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  /* --- Buttons --- */
+  .btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.88; }
+  .btn-outline {
+    background: transparent;
+    border: 2px solid;
+    padding: 8px 22px;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  /* --- Nav Sample --- */
+  .sample-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .nav-brand {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+  .nav-links span { cursor: pointer; }
+  .nav-cta {
+    font-size: 0.75rem;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* --- Typography Sample --- */
+  .type-sample {
+    margin-bottom: 24px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .type-sample h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  .type-sample p {
+    font-size: 0.85rem;
+    line-height: 1.65;
+  }
+
+  /* --- Best For --- */
+  .best-for {
+    font-size: 0.78rem;
+    color: #6b6560;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px dashed #d5d0c8;
+    margin-top: 20px;
+  }
+  .best-for strong {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #a09a94;
+    margin-bottom: 6px;
+  }
+
+  /* --- Footer --- */
+  .page-footer {
+    text-align: center;
+    padding: 36px 40px;
+    border-top: 1px solid #d5d0c8;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    color: #a09a94;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .themes-grid { grid-template-columns: 1fr; }
+    .theme-col { border-right: none; border-bottom: 1px solid #d5d0c8; }
+    .theme-col:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <h1>Create Allied Health</h1>
+  <p class="subtitle">Empower Your Journey</p>
+  <p class="brief">Colour Palette Exploration &mdash; Three Directions &mdash; No Green</p>
+</header>
+
+<div class="themes-grid">
+
+  <!-- ============================================ -->
+  <!-- THEME 1: WARM HARBOUR -->
+  <!-- ============================================ -->
+  <div class="theme-col">
+    <div class="theme-number">Theme 01</div>
+    <div class="theme-name" style="color: #1B2A4A;">Warm Harbour</div>
+    <div class="theme-subtitle">Navy &amp; Warm Gold</div>
+    <div class="theme-desc">
+      Trust and authority anchored by warmth. A premium palette that conveys clinical depth
+      through deep navy while gold adds value and human connection. Grounded, professional,
+      quietly confident.
+    </div>
+
+    <div class="section-label">Colour Palette</div>
+    <div class="swatches">
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #1B2A4A;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Primary</div>
+          <div class="swatch-name">Deep Navy</div>
+          <div class="swatch-hex">#1B2A4A</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #C4973B;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Secondary</div>
+          <div class="swatch-name">Warm Gold</div>
+          <div class="swatch-hex">#C4973B</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #E07A5F;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Accent</div>
+          <div class="swatch-name">Soft Coral</div>
+          <div class="swatch-hex">#E07A5F</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block light-bg" style="background: #FAF6F0;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Background</div>
+          <div class="swatch-name">Warm Ivory</div>
+          <div class="swatch-hex">#FAF6F0</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #2D3436;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Text</div>
+          <div class="swatch-name">Charcoal</div>
+          <div class="swatch-hex">#2D3436</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Navigation Preview</div>
+    <div class="sample-nav" style="background: #1B2A4A;">
+      <div class="nav-brand" style="color: #FAF6F0;">Create Allied Health</div>
+      <div class="nav-links" style="color: #C4973B;">
+        <span>Services</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+      <div class="nav-cta" style="background: #E07A5F; color: #FAF6F0;">Get Started</div>
+    </div>
+
+    <div class="section-label">Card Component</div>
+    <div class="sample-card" style="background: #FAF6F0;">
+      <div class="card-accent-bar" style="background: #C4973B;"></div>
+      <div class="card-body">
+        <div class="card-heading" style="color: #1B2A4A;">Person-Centered Care</div>
+        <div class="card-text" style="color: #2D3436;">
+          Collaborative, strength-based support for complex needs. We work alongside you to navigate systems and access entitlements.
+        </div>
+        <div class="btn-group">
+          <div class="btn" style="background: #1B2A4A; color: #FAF6F0;">Learn More</div>
+          <div class="btn btn-outline" style="color: #1B2A4A; border-color: #1B2A4A;">Contact Us</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Typography Sample</div>
+    <div class="type-sample" style="background: #FAF6F0;">
+      <h2 style="color: #1B2A4A;">Empower Your Journey</h2>
+      <p style="color: #2D3436;">Led by expertise, driven by empathy. We provide person-centered clinical social work for complex cases across Australia.</p>
+    </div>
+
+    <div class="best-for">
+      <strong>Best suited when</strong>
+      The brand wants to project established authority and premium trust. Ideal if targeting professional referrers (hospitals, legal, case managers) alongside clients. Navy communicates institutional credibility; gold signals value.
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- THEME 2: DUSK BLOOM -->
+  <!-- ============================================ -->
+  <div class="theme-col">
+    <div class="theme-number">Theme 02</div>
+    <div class="theme-name" style="color: #5B2C6F;">Dusk Bloom</div>
+    <div class="theme-subtitle">Plum &amp; Blush</div>
+    <div class="theme-desc">
+      Wisdom and dignity wrapped in empathy. Deep plum carries clinical depth and gravitas
+      while dusty rose softens with care and warmth. Calming, distinctive, and uniquely
+      memorable in the allied health space.
+    </div>
+
+    <div class="section-label">Colour Palette</div>
+    <div class="swatches">
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #5B2C6F;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Primary</div>
+          <div class="swatch-name">Deep Plum</div>
+          <div class="swatch-hex">#5B2C6F</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #C77D8A;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Secondary</div>
+          <div class="swatch-name">Dusty Rose</div>
+          <div class="swatch-hex">#C77D8A</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #D4A03C;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Accent</div>
+          <div class="swatch-name">Amber</div>
+          <div class="swatch-hex">#D4A03C</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block light-bg" style="background: #F5F0F7;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Background</div>
+          <div class="swatch-name">Soft Lavender</div>
+          <div class="swatch-hex">#F5F0F7</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #2C2C3A;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Text</div>
+          <div class="swatch-name">Dark Slate</div>
+          <div class="swatch-hex">#2C2C3A</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Navigation Preview</div>
+    <div class="sample-nav" style="background: #5B2C6F;">
+      <div class="nav-brand" style="color: #F5F0F7;">Create Allied Health</div>
+      <div class="nav-links" style="color: #C77D8A;">
+        <span>Services</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+      <div class="nav-cta" style="background: #D4A03C; color: #2C2C3A;">Get Started</div>
+    </div>
+
+    <div class="section-label">Card Component</div>
+    <div class="sample-card" style="background: #F5F0F7;">
+      <div class="card-accent-bar" style="background: #C77D8A;"></div>
+      <div class="card-body">
+        <div class="card-heading" style="color: #5B2C6F;">Person-Centered Care</div>
+        <div class="card-text" style="color: #2C2C3A;">
+          Collaborative, strength-based support for complex needs. We work alongside you to navigate systems and access entitlements.
+        </div>
+        <div class="btn-group">
+          <div class="btn" style="background: #5B2C6F; color: #F5F0F7;">Learn More</div>
+          <div class="btn btn-outline" style="color: #5B2C6F; border-color: #5B2C6F;">Contact Us</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Typography Sample</div>
+    <div class="type-sample" style="background: #F5F0F7;">
+      <h2 style="color: #5B2C6F;">Empower Your Journey</h2>
+      <p style="color: #2C2C3A;">Led by expertise, driven by empathy. We provide person-centered clinical social work for complex cases across Australia.</p>
+    </div>
+
+    <div class="best-for">
+      <strong>Best suited when</strong>
+      The brand wants to stand out from typical blue/green healthcare palettes. Plum conveys wisdom, dignity, and clinical sophistication. Rose adds genuine warmth. Perfect for mental health, trauma-informed work, and disability services where empathy is paramount.
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- THEME 3: COASTAL CALM -->
+  <!-- ============================================ -->
+  <div class="theme-col">
+    <div class="theme-number">Theme 03</div>
+    <div class="theme-name" style="color: #3A6B8C;">Coastal Calm</div>
+    <div class="theme-subtitle">Steel Blue &amp; Terracotta</div>
+    <div class="theme-desc">
+      Reliability meets Australian earthiness. Steel blue maintains healthcare trust and calm
+      while terracotta grounds it in landscape warmth. Natural, organic, and quietly
+      confident — like the Australian coast itself.
+    </div>
+
+    <div class="section-label">Colour Palette</div>
+    <div class="swatches">
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #3A6B8C;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Primary</div>
+          <div class="swatch-name">Steel Blue</div>
+          <div class="swatch-hex">#3A6B8C</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #C47A5A;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Secondary</div>
+          <div class="swatch-name">Terracotta</div>
+          <div class="swatch-hex">#C47A5A</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #D4A843;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Accent</div>
+          <div class="swatch-name">Soft Mustard</div>
+          <div class="swatch-hex">#D4A843</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block light-bg" style="background: #FBF7F2;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Background</div>
+          <div class="swatch-name">Warm Linen</div>
+          <div class="swatch-hex">#FBF7F2</div>
+        </div>
+      </div>
+      <div class="swatch-row">
+        <div class="swatch-block" style="background: #2A2F33;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">Text</div>
+          <div class="swatch-name">Deep Charcoal</div>
+          <div class="swatch-hex">#2A2F33</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Navigation Preview</div>
+    <div class="sample-nav" style="background: #3A6B8C;">
+      <div class="nav-brand" style="color: #FBF7F2;">Create Allied Health</div>
+      <div class="nav-links" style="color: #D4A843;">
+        <span>Services</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+      <div class="nav-cta" style="background: #C47A5A; color: #FBF7F2;">Get Started</div>
+    </div>
+
+    <div class="section-label">Card Component</div>
+    <div class="sample-card" style="background: #FBF7F2;">
+      <div class="card-accent-bar" style="background: #C47A5A;"></div>
+      <div class="card-body">
+        <div class="card-heading" style="color: #3A6B8C;">Person-Centered Care</div>
+        <div class="card-text" style="color: #2A2F33;">
+          Collaborative, strength-based support for complex needs. We work alongside you to navigate systems and access entitlements.
+        </div>
+        <div class="btn-group">
+          <div class="btn" style="background: #3A6B8C; color: #FBF7F2;">Learn More</div>
+          <div class="btn btn-outline" style="color: #3A6B8C; border-color: #3A6B8C;">Contact Us</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label">Typography Sample</div>
+    <div class="type-sample" style="background: #FBF7F2;">
+      <h2 style="color: #3A6B8C;">Empower Your Journey</h2>
+      <p style="color: #2A2F33;">Led by expertise, driven by empathy. We provide person-centered clinical social work for complex cases across Australia.</p>
+    </div>
+
+    <div class="best-for">
+      <strong>Best suited when</strong>
+      The brand wants to feel Australian and approachable while maintaining healthcare trust. Terracotta nods to the landscape and feels distinctly local. Steel blue keeps clinical credibility. Ideal for NDIS, community health, and aged care audiences.
+    </div>
+  </div>
+
+</div>
+
+<footer class="page-footer">
+  Create Allied Health Services &mdash; Colour Exploration &mdash; 2026 &mdash; All palettes exclude green per brief
+</footer>
+
+</body>
+</html>

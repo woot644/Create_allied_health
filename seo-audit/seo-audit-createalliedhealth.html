@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SEO Audit Report - Create Allied Health Services</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.55;
+    color: #1E293B;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0;
+    background: white;
+}
+
+/* ===== COVER PAGE ===== */
+.cover {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 60%, #0369A1 100%);
+    color: white;
+    padding: 80px 50px 60px 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    page-break-after: always;
+}
+.cover-badge {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 30px;
+}
+.cover h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    border: none;
+    padding: 0;
+    color: white;
+    background: none;
+}
+.cover .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+.cover-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 30px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 25px;
+}
+.cover-meta strong {
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+    display: block;
+    font-size: 10px;
+}
+.cover-logo {
+    margin-top: 60px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    font-weight: 600;
+}
+
+/* ===== CONTENT PAGES ===== */
+.content {
+    padding: 40px 45px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #0F172A;
+    margin-top: 35px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+h2 {
+    font-size: 15px;
+    color: #0F172A;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-bottom: 2.5px solid #0369A1;
+    padding-bottom: 6px;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 9.5px;
+    color: #0369A1;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-size: 12px;
+    color: #1E293B;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    page-break-after: avoid;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+strong { font-weight: 700; color: #0F172A; }
+
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background: #F1F5F9;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 9.5px;
+    color: #0369A1;
+}
+
+ul, ol {
+    margin: 6px 0 12px 22px;
+}
+li { margin-bottom: 4px; }
+
+/* ===== SCORE BOX ===== */
+.score-box {
+    background: linear-gradient(135deg, #FEF2F2, #FFF7ED);
+    border-left: 4px solid #DC2626;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    margin: 16px 0 20px 0;
+    text-align: center;
+}
+.score-box .score-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: #DC2626;
+    letter-spacing: -1px;
+}
+.score-box .score-label {
+    font-size: 10px;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.score-box.good {
+    background: linear-gradient(135deg, #F0FDF4, #ECFDF5);
+    border-left-color: #059669;
+}
+.score-box.good .score-value { color: #059669; }
+
+/* ===== TABLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px 0;
+    font-size: 10px;
+}
+th {
+    background: #0F172A;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #E2E8F0;
+    vertical-align: top;
+}
+tr:nth-child(even) td { background: #F8FAFC; }
+
+.fail { color: #DC2626; font-weight: 600; }
+.warn { color: #D97706; font-weight: 600; }
+.ok { color: #059669; font-weight: 600; }
+
+/* ===== CALLOUT BOXES ===== */
+.callout {
+    background: #F0F9FF;
+    border-left: 4px solid #0369A1;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: 10.5px;
+}
+.callout.critical {
+    background: #FEF2F2;
+    border-left-color: #DC2626;
+}
+.callout.success {
+    background: #F0FDF4;
+    border-left-color: #059669;
+}
+.callout strong { display: block; margin-bottom: 4px; }
+
+/* ===== DIVIDER ===== */
+.divider {
+    border: none;
+    border-top: 1px solid #E2E8F0;
+    margin: 24px 0;
+}
+
+/* ===== FOOTER ===== */
+.report-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 2.5px solid #0369A1;
+    font-size: 9px;
+    color: #94A3B8;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ===== PRINT ===== */
+@media print {
+    body { padding: 0; }
+    .cover { min-height: 100vh; }
+    h2, h3, h4 { page-break-after: avoid; }
+    table, .callout, .score-box { page-break-inside: avoid; }
+    p, li { orphans: 3; widows: 3; }
+}
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+    <div class="cover-badge">SEO Audit Report</div>
+    <h1>Create Allied Health Services</h1>
+    <p class="subtitle">Comprehensive SEO analysis with prioritised recommendations<br>to improve search visibility and attract more referrals.</p>
+    <div class="cover-meta">
+        <div><strong>Prepared by</strong>Arclight Digital</div>
+        <div><strong>Date</strong>4 April 2026</div>
+        <div><strong>Website</strong>www.createalliedhealth.com.au</div>
+        <div><strong>Platform</strong>Squarespace</div>
+        <div><strong>Industry</strong>Healthcare / NDIS Allied Health</div>
+        <div><strong>Location</strong>Sydney, Australia</div>
+    </div>
+    <div class="cover-logo">Arclight Digital</div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>Executive Summary</h2>
+
+<p>Create Allied Health Services has genuine clinical expertise and strong professional credentials that are not being reflected in the website's digital presence. The site has significant technical issues, missing structured data, blocked AI search crawlers, and no local SEO infrastructure &mdash; all of which are preventing it from being found by the people who need its services most.</p>
+
+<div class="score-box">
+    <div class="score-label">Overall SEO Health Score</div>
+    <div class="score-value">38 / 100</div>
+</div>
+
+<table>
+    <tr><th>Category</th><th>Score</th><th>Status</th></tr>
+    <tr><td>Technical SEO</td><td>54/100</td><td class="warn">Needs Work</td></tr>
+    <tr><td>Content Quality &amp; E-E-A-T</td><td>42/100</td><td class="warn">Needs Work</td></tr>
+    <tr><td>On-Page SEO</td><td>40/100</td><td class="fail">Failing</td></tr>
+    <tr><td>Schema / Structured Data</td><td>9/100</td><td class="fail">Failing</td></tr>
+    <tr><td>Performance</td><td>60/100</td><td class="ok">Acceptable</td></tr>
+    <tr><td>AI Search Readiness</td><td>41/100</td><td class="fail">Failing</td></tr>
+    <tr><td>Local SEO</td><td>31/100</td><td class="fail">Failing</td></tr>
+</table>
+
+<div class="callout success">
+    <strong>The good news</strong>
+    The underlying business has exactly what Google wants to rank highly for healthcare searches &mdash; a named, qualified founder (Kate Engledow, AASW-registered, PhD candidate), NDIS registration, institutional partnerships (iCare, WorkCover, DVA), and genuine specialist expertise. The website simply isn't communicating this to search engines or AI systems effectively.
+    <br><br><strong>Estimated score after fixes: 75&ndash;85 / 100</strong>
+</div>
+
+<h2>What We Found: Top Issues</h2>
+
+<h3>Critical &mdash; Blocking Your Visibility Right Now</h3>
+
+<h4>1. AI Search Engines Cannot See Your Website</h4>
+<p>Every major AI search crawler (Google AI Overviews, ChatGPT, Claude, Perplexity) is blocked by Squarespace's default robots.txt settings. This means when someone asks ChatGPT or Google's AI "who are NDIS social workers in Sydney?", your website literally cannot appear in the answer.</p>
+
+<div class="callout critical">
+    <strong>Why this matters</strong>
+    AI-powered search is rapidly becoming how people find healthcare services. Being invisible to AI search means missing an increasing share of potential referrals.
+    <br><br><strong>The fix:</strong> Adjust Squarespace's AI crawler settings to allow access. This is a settings change, not a rebuild.
+</div>
+
+<h4>2. Broken Pages in Your Sitemap</h4>
+<p>Three pages in your sitemap return 404 errors (page not found):</p>
+<ul>
+    <li>/ndis-access-requests</li>
+    <li>/case-consultation</li>
+    <li>/student-supervision</li>
+</ul>
+<p>Plus 6 legacy pages from the old site structure are still live and competing with your current pages for Google's attention. This confuses Google about which pages are important.</p>
+
+<div class="callout critical">
+    <strong>Why this matters</strong>
+    Google sees your sitemap as a map of your most important content. When 25% of it leads to dead ends, Google loses trust in the site's reliability.
+</div>
+
+<h4>3. Your Homepage Has Multiple Competing Headings</h4>
+<p>The homepage has 4 separate H1 tags (the main heading that tells Google what the page is about). Google expects one H1 per page. Multiple H1s dilute your keyword signal and make it unclear what the page's primary topic is.</p>
+<p>This same issue repeats across service pages &mdash; a "Take your first step" CTA block is set as H1 on 6 different pages, competing with each page's actual service heading.</p>
+
+<h4>4. "Accommodation" Is Misspelled in Your URL</h4>
+<p>The URL <code>/accomodation-support</code> is missing a "c" in "accommodation." This means when someone searches for "NDIS accommodation support Sydney" (the correct NDIS terminology), Google won't match your URL to that query. This is a direct ranking loss for a high-value service keyword.</p>
+
+<h3>High Priority &mdash; Significantly Impacting Rankings</h3>
+
+<h4>5. No Google Business Profile Detected</h4>
+<p>There is no evidence of a claimed, verified Google Business Profile. This means:</p>
+<ul>
+    <li>You don't appear in Google Maps results for "allied health Sydney" or "NDIS social worker near me"</li>
+    <li>You have no Google reviews visible to potential clients</li>
+    <li>You miss out on the Local Pack (the map section at the top of Google search results)</li>
+</ul>
+
+<h4>6. Schema Markup Is Essentially Empty (Score: 9/100)</h4>
+<p>Your website has two auto-generated structured data blocks from Squarespace, but they're nearly empty &mdash; no business name, no phone number, no address, no services listed, no founder credentials. This is the data Google uses to understand what your business does, where it operates, and why it should be trusted.</p>
+
+<h4>7. Title Tags Are Too Long (Truncated in Search Results)</h4>
+<p>11 of 12 pages have title tags over 90 characters. Google displays approximately 60 characters. Your titles are being cut off mid-sentence in search results, which reduces click-through rates.</p>
+
+<h4>8. Meta Descriptions Missing or Duplicated</h4>
+<ul>
+    <li>The homepage meta description is duplicated (same text appears twice)</li>
+    <li>Blog posts have empty meta descriptions</li>
+    <li>Service page descriptions exceed the 160-character display limit</li>
+</ul>
+
+<h4>9. "Sydney" Is Barely Mentioned</h4>
+<p>Despite being a Sydney-based provider, "Sydney" appears only once on the homepage. Service pages have it in titles but the body content lacks geographic signals. Competitors consistently mention Sydney, specific suburbs, and hospital names throughout their content.</p>
+
+<h4>10. Only 2 Blog Posts Since 2023</h4>
+<p>The blog has only 2 articles, both from late 2023. Competitors in the NDIS space are publishing monthly. For a healthcare site, Google places enormous weight on fresh, expert content. Two years without new content signals to Google that the site may not be actively maintained.</p>
+
+<h4>11. No Privacy Policy</h4>
+<p>Australian Privacy Principles require health service providers collecting personal information to have a compliant privacy policy. Its absence is both a legal risk and a trust signal failure for Google's quality raters.</p>
+
+<h4>12. Broken Internal Links</h4>
+<p>The "Learn More" button on the Housing &amp; Accommodation section links to the Mental Health Services page instead of the correct housing page. On a healthcare website, sending a person in housing crisis to the wrong page is a functional trust failure.</p>
+
+<h4>13. Copyright Shows "2023 by Liddy Creative Studio"</h4>
+<p>The footer displays a 3-year-old copyright attributed to the web design studio, not to Create Allied Health. This signals site abandonment to both users and Google.</p>
+
+<h3>Medium Priority &mdash; Optimisation Opportunities</h3>
+
+<h4>14. No FAQ Sections or Schema</h4>
+<p>There are zero question-based headings on the entire site. FAQ sections would target long-tail search queries, enable rich results in Google (healthcare sites are eligible), and make content citable by AI search engines.</p>
+
+<h4>15. No llms.txt File</h4>
+<p>This emerging standard allows you to tell AI search engines exactly how to describe your business. Without it, AI systems must guess.</p>
+
+<h4>16. NDIS Registration Number Not Displayed</h4>
+<p>Support coordinators and NDIS participants look for this to verify provider legitimacy. It should be in the footer and on the NDIS services page.</p>
+
+<h4>17. OG Image Is the Logo (Square, Not Optimised)</h4>
+<p>When your website is shared on LinkedIn, Facebook, or WhatsApp, the preview shows a cropped square logo instead of a professional 1200&times;630 social sharing image.</p>
+
+<h4>18. Geographic Coordinates Set to New York</h4>
+<p>Squarespace's default geo coordinates haven't been updated &mdash; they still point to New York City instead of Sydney.</p>
+
+<h2>Competitive Landscape</h2>
+
+<p>Create Allied Health is <strong>not currently ranking on page 1</strong> for any of the primary NDIS keywords in Sydney:</p>
+
+<table>
+    <tr><th>Keyword</th><th>Your Position</th><th>Competition Level</th></tr>
+    <tr><td>NDIS social worker Sydney</td><td class="fail">Not found</td><td>Moderate</td></tr>
+    <tr><td>Allied health services Sydney</td><td class="fail">Not found</td><td>High</td></tr>
+    <tr><td>Hospital discharge planning Sydney</td><td class="fail">Not found</td><td class="ok">Low &mdash; opportunity</td></tr>
+    <tr><td>Psychosocial assessment Sydney</td><td class="fail">Not found</td><td class="ok">Low &mdash; strong opportunity</td></tr>
+    <tr><td>NDIS registered provider Sydney</td><td class="fail">Not found</td><td>High (directories dominate)</td></tr>
+</table>
+
+<div class="callout">
+    <strong>Your competitive advantages (not yet leveraged)</strong>
+    <ul>
+        <li>Kate Engledow's academic credentials (PhD candidate, University of Sydney) exceed most competitors</li>
+        <li>AASW registration + Aged Care Working Group membership is a genuine authority signal</li>
+        <li>Niche specialisation in complex case management (NCAT, guardianship, aged care) faces less competition</li>
+        <li>Institutional partnerships (iCare, WorkCover, DVA) are trust signals competitors don't have</li>
+    </ul>
+</div>
+
+<h2>Recommended Action Plan</h2>
+
+<h3>Phase 1 &mdash; Critical Fixes (Weeks 1&ndash;2)</h3>
+<p><em>Estimated impact: Score 38 &rarr; 55</em></p>
+
+<table>
+    <tr><th>Action</th><th>What It Fixes</th><th>Priority</th></tr>
+    <tr><td>Unblock AI search crawlers</td><td>Invisible to ChatGPT, Google AI, Perplexity</td><td class="fail">Critical</td></tr>
+    <tr><td>Remove dead/duplicate URLs from sitemap</td><td>3 &times; 404 pages + /home duplicate + 6 legacy pages</td><td class="fail">Critical</td></tr>
+    <tr><td>Fix broken internal links</td><td>Housing links to wrong page</td><td class="fail">Critical</td></tr>
+    <tr><td>Fix "accommodation" URL spelling</td><td>Missing rankings for core NDIS keyword</td><td class="fail">Critical</td></tr>
+    <tr><td>Reduce to single H1 per page</td><td>Competing headings on 6+ pages</td><td class="warn">High</td></tr>
+    <tr><td>Fix /student-placement content mismatch</td><td>Wrong H1/title/meta from cloned page</td><td class="warn">High</td></tr>
+    <tr><td>Update copyright to 2026 + correct attribution</td><td>Signals site abandonment</td><td class="warn">High</td></tr>
+    <tr><td>Update geo coordinates to Sydney</td><td>Currently set to New York</td><td class="warn">High</td></tr>
+</table>
+
+<h3>Phase 2 &mdash; Foundation Building (Weeks 3&ndash;6)</h3>
+<p><em>Estimated impact: Score 55 &rarr; 70</em></p>
+
+<table>
+    <tr><th>Action</th><th>What It Fixes</th><th>Priority</th></tr>
+    <tr><td>Claim &amp; optimise Google Business Profile</td><td>No local pack visibility, no reviews</td><td class="fail">Critical</td></tr>
+    <tr><td>Implement complete schema markup (7 blocks)</td><td>Schema score 9 &rarr; 80+</td><td class="warn">High</td></tr>
+    <tr><td>Rewrite all title tags (under 60 characters)</td><td>Truncated in search results</td><td class="warn">High</td></tr>
+    <tr><td>Rewrite all meta descriptions (140&ndash;155 chars)</td><td>Missing/duplicated/truncated</td><td class="warn">High</td></tr>
+    <tr><td>Create privacy policy page</td><td>Legal requirement + trust signal</td><td class="warn">High</td></tr>
+    <tr><td>Add NDIS registration number to footer</td><td>Trust signal for referrers</td><td class="warn">High</td></tr>
+    <tr><td>Create proper OG social sharing image</td><td>Poor link previews on social/email</td><td>Medium</td></tr>
+    <tr><td>Add "Sydney" + suburb keywords to service pages</td><td>Weak geographic signals</td><td>Medium</td></tr>
+    <tr><td>Create llms.txt file</td><td>AI search entity definition</td><td>Medium</td></tr>
+</table>
+
+<h3>Phase 3 &mdash; Growth &amp; Authority (Months 2&ndash;6)</h3>
+<p><em>Estimated impact: Score 70 &rarr; 85</em></p>
+
+<table>
+    <tr><th>Action</th><th>What It Fixes</th><th>Priority</th></tr>
+    <tr><td>Launch monthly blog (12 posts in 6 months)</td><td>Only 2 posts since 2023</td><td class="warn">High</td></tr>
+    <tr><td>Add FAQ sections to all service pages</td><td>No question-based content for AI/snippets</td><td class="warn">High</td></tr>
+    <tr><td>Build Google reviews (target: 10 in 3 months)</td><td>Zero review infrastructure</td><td class="warn">High</td></tr>
+    <tr><td>Create service areas page</td><td>No geographic depth</td><td>Medium</td></tr>
+    <tr><td>Submit to healthcare directories</td><td>Limited citation presence</td><td>Medium</td></tr>
+    <tr><td>Add Kate Engledow's credentials to all blog bylines</td><td>Expert content not attributed to named person</td><td>Medium</td></tr>
+    <tr><td>Create dedicated landing pages per referral source</td><td>One page serving all audiences</td><td>Medium</td></tr>
+    <tr><td>Add case studies / anonymised outcome data</td><td>No evidence of experience in content</td><td>Medium</td></tr>
+</table>
+
+<h2>Projected Results</h2>
+
+<table>
+    <tr><th>Metric</th><th>Current</th><th>After Phase 1</th><th>After Phase 2</th><th>After Phase 3</th></tr>
+    <tr><td>SEO Health Score</td><td class="fail">38/100</td><td class="warn">55/100</td><td>70/100</td><td class="ok">85/100</td></tr>
+    <tr><td>Schema Score</td><td class="fail">9/100</td><td>9/100</td><td>80/100</td><td class="ok">90/100</td></tr>
+    <tr><td>Local SEO Score</td><td class="fail">31/100</td><td>35/100</td><td>65/100</td><td class="ok">80/100</td></tr>
+    <tr><td>AI Search Score</td><td class="fail">41/100</td><td>55/100</td><td>70/100</td><td class="ok">85/100</td></tr>
+    <tr><td>Google Visibility</td><td class="fail">Not ranking</td><td>Indexing correctly</td><td>Page 2&ndash;3 niche terms</td><td class="ok">Page 1 niche terms</td></tr>
+</table>
+
+<h2>Why Act Now</h2>
+
+<ol>
+    <li><strong>AI search is reshaping healthcare discovery.</strong> Every month your site stays blocked from AI crawlers is a month of missed referral opportunities.</li>
+    <li><strong>Your niche has low competition.</strong> "Psychosocial assessment Sydney" and "hospital discharge planning Sydney" have far fewer competitors than general NDIS queries. With proper optimisation, you can own these niches.</li>
+    <li><strong>Your credentials are your superpower.</strong> Kate Engledow's qualifications, AASW registration, and institutional partnerships are exactly what Google's healthcare quality standards reward. They just need to be properly communicated.</li>
+    <li><strong>Compound returns.</strong> Every blog post, every review, every schema improvement compounds over time. Starting 3 months earlier means 3 months more compounding.</li>
+</ol>
+
+<div class="divider"></div>
+
+<div class="report-footer">
+    <strong>Arclight Digital</strong><br>
+    Web Design &amp; SEO Management for Australian Businesses<br>
+    arclightdigital.com.au &nbsp;|&nbsp; sales@arclightdigital.com.au<br><br>
+    <em>This report is confidential and prepared exclusively for Create Allied Health Services.</em>
+</div>
+
+</div>
+</body>
+</html>
