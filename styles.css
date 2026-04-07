@@ -3092,6 +3092,8 @@ section, .section { position: relative; }
         opacity: 0;
         pointer-events: none;
         transition: var(--transition);
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .nav__links--open {
