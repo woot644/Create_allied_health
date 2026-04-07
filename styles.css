@@ -3101,6 +3101,13 @@ section, .section { position: relative; }
         pointer-events: auto;
     }
 
+    /* Remove backdrop-filter when menu is open — it creates a containing
+       block that traps the fixed-position overlay inside the nav bar */
+    .nav--scrolled:has(.nav__links--open) {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
     .nav__links a {
         font-size: 1.3rem !important;
         color: var(--white) !important;
