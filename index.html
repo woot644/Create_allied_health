@@ -15,8 +15,11 @@
     <meta name="description" content="NDIS therapeutic supports and capacity building in Sydney. Psychosocial assessments, discharge planning, and clinical supervision. Call 1800 930 350.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
+    <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="canonical" href="https://www.createalliedhealth.com.au/">
     <meta property="og:title" content="Create Allied Health Services — Empower Your Journey">
     <meta property="og:description" content="NDIS therapeutic supports and capacity building in Sydney. Psychosocial assessments, discharge planning, and clinical supervision. Call 1800 930 350.">
@@ -40,15 +43,7 @@
       "@type": "WebSite",
       "name": "Create Allied Health Services",
       "url": "https://www.createalliedhealth.com.au",
-      "description": "NDIS-registered allied health and clinical social work services in Sydney, Australia.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.createalliedhealth.com.au/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "description": "NDIS-registered allied health and clinical social work services in Sydney, Australia."
     }
     </script>
     <!-- Schema: MedicalBusiness -->
@@ -114,7 +109,7 @@
     <nav class="nav" id="nav">
         <div class="nav__inner">
             <a href="index.html" class="nav__logo">
-                <img src="images/logo-orange.webp" alt="Create Allied Health Services" class="nav__logo-img">
+                <img src="images/logo-orange.webp" alt="Create Allied Health Services" class="nav__logo-img" width="1027" height="292">
             </a>
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span><span></span><span></span>
@@ -151,7 +146,7 @@
     <!-- HERO -->
     <header class="hero" id="hero">
         <div class="hero__bg">
-            <img fetchpriority="high" src="images/hero.webp" alt="" class="hero__img">
+            <img fetchpriority="high" src="images/hero.webp" alt="" class="hero__img" width="1584" height="672">
             <div class="hero__overlay"></div>
         </div>
         <div class="hero__content">
@@ -206,7 +201,7 @@
     <!-- SERVICES -->
     <section class="services" id="services">
         <div class="services__bg-texture">
-            <img loading="lazy" src="images/texture.webp" alt="">
+            <img loading="lazy" src="images/texture.webp" alt="" width="1376" height="768">
         </div>
         <div class="container">
             <p class="section-eyebrow">What We Do</p>
@@ -348,7 +343,7 @@
             <div class="about__grid">
                 <div class="about__image-col">
                     <div class="about__image-wrapper">
-                        <img loading="lazy" src="images/team-director.webp" alt="Kate Engledow — Clinical Director" class="about__image">
+                        <img loading="lazy" src="images/team-director.webp" alt="Kate Engledow — Clinical Director" class="about__image" width="992" height="1079">
                         <div class="about__image-accent"></div>
                     </div>
                 </div>
@@ -402,7 +397,7 @@
             <div class="footer__inner">
                 <div class="footer__brand">
                     <a href="index.html" class="nav__logo">
-                <img src="images/logo-orange.webp" alt="Create Allied Health Services" class="nav__logo-img">
+                <img src="images/logo-orange.webp" alt="Create Allied Health Services" class="nav__logo-img" width="1027" height="292">
             </a>
                     <p class="footer__tagline">Empower Your Journey</p>
                 </div>
@@ -424,6 +419,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
