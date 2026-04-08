@@ -13,12 +13,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NDIS Allied Health Sydney | Create Allied Health</title>
     <meta name="description" content="NDIS therapeutic supports and capacity building in Sydney. Psychosocial assessments, discharge planning, and clinical supervision. Call 1800 930 350.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero.webp" media="(min-width: 769px)" fetchpriority="high">
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="canonical" href="https://www.createalliedhealth.com.au/">
     <meta property="og:title" content="Create Allied Health Services — Empower Your Journey">
@@ -146,7 +146,10 @@
     <!-- HERO -->
     <header class="hero" id="hero">
         <div class="hero__bg">
-            <img fetchpriority="high" src="images/hero.webp" alt="" class="hero__img" width="1584" height="672">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/hero-mobile.webp" width="800" height="339">
+                <img fetchpriority="high" src="images/hero.webp" alt="" class="hero__img" width="1584" height="672">
+            </picture>
             <div class="hero__overlay"></div>
         </div>
         <div class="hero__content">
