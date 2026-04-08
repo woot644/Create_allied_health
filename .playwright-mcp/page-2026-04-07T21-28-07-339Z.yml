@@ -1,0 +1,211 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Create Allied Health Services" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Create Allied Health Services" [ref=e5]
+      - button "Toggle navigation" [ref=e6] [cursor=pointer]
+      - list:
+        - listitem:
+          - link "About":
+            - /url: about.html
+        - listitem:
+          - link "Client Services":
+            - /url: "#"
+            - text: Client Services
+            - img
+        - listitem:
+          - link "Professional":
+            - /url: "#"
+            - text: Professional
+            - img
+        - listitem:
+          - link "Careers":
+            - /url: careers.html
+        - listitem:
+          - link "Blog":
+            - /url: blog.html
+        - listitem:
+          - link "Refer a Client":
+            - /url: referrals.html
+  - banner [ref=e10]:
+    - generic [ref=e13]:
+      - navigation "Breadcrumb" [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Home" [ref=e17] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e18]:
+            - text: /
+            - link "Client Services" [ref=e19] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e20]:
+            - text: /
+            - generic [ref=e21]: Hospital Discharge
+      - heading "Hospital Discharge & Rehabilitation" [level=1] [ref=e22]
+  - generic [ref=e25]:
+    - complementary [ref=e26]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "NDIS Services" [ref=e30] [cursor=pointer]:
+            - /url: ndis-services.html
+        - listitem [ref=e31]:
+          - link "Hospital Discharge" [ref=e32] [cursor=pointer]:
+            - /url: hospital-discharge.html
+        - listitem [ref=e33]:
+          - link "Mental Health Support" [ref=e34] [cursor=pointer]:
+            - /url: mental-health-support.html
+        - listitem [ref=e35]:
+          - link "Housing & Accommodation" [ref=e36] [cursor=pointer]:
+            - /url: housing-support.html
+        - listitem [ref=e37]:
+          - link "Guardianship & NCAT" [ref=e38] [cursor=pointer]:
+            - /url: guardianship-ncat.html
+        - listitem [ref=e39]:
+          - link "Aged Care Transitions" [ref=e40] [cursor=pointer]:
+            - /url: aged-care-transitions.html
+        - listitem [ref=e41]:
+          - link "Psychosocial Support" [ref=e42] [cursor=pointer]:
+            - /url: psychosocial-support.html
+        - listitem [ref=e43]:
+          - link "iCare & WorkCover" [ref=e44] [cursor=pointer]:
+            - /url: icare-social-work.html
+      - generic [ref=e45]:
+        - heading "Get in Touch" [level=4] [ref=e46]
+        - paragraph [ref=e47]: 1800 930 350
+        - paragraph [ref=e48]: admin@createalliedhealth.com.au
+        - link "Refer a Client" [ref=e49] [cursor=pointer]:
+          - /url: referrals.html
+    - generic [ref=e50]:
+      - heading "Overview" [level=2] [ref=e51]
+      - paragraph [ref=e52]: Create Allied Health provides rapid-response discharge planning for patients across Sydney's major hospitals, including private and public hospitals across Greater Sydney. Our clinical social workers work directly with hospital teams to remove barriers to safe, timely discharge and ensure patients transition successfully into community living across Greater Sydney and regional NSW.
+      - heading "Urgent Discharge Assessment" [level=2] [ref=e53]
+      - paragraph [ref=e54]:
+        - text: When discharge is urgent, we respond within
+        - strong [ref=e55]: 24–72 hours
+        - text: to get things moving.
+      - list [ref=e56]:
+        - listitem [ref=e57]: Rapid psychosocial assessment at the bedside or via telehealth
+        - listitem [ref=e58]: Identification of barriers preventing safe discharge
+        - listitem [ref=e59]: Clear pathway recommendations for the treating team
+      - heading "Comprehensive Discharge Planning" [level=2] [ref=e60]
+      - paragraph [ref=e61]: For patients with complex needs, we provide end-to-end discharge planning that addresses every dimension of a safe return to the community.
+      - list [ref=e62]:
+        - listitem [ref=e63]: Full psychosocial evaluation of the patient's circumstances
+        - listitem [ref=e64]: Housing pathway assessment and accommodation planning
+        - listitem [ref=e65]: Service coordination across multiple providers and systems
+        - listitem [ref=e66]: Family engagement, education, and conflict resolution
+        - listitem [ref=e67]: Mental health support and crisis prevention strategies
+        - listitem [ref=e68]: Detailed post-discharge planning with community follow-up
+      - heading "Housing & Accommodation Support" [level=2] [ref=e69]
+      - paragraph [ref=e70]: "Housing is one of the most common barriers to hospital discharge. We provide specialist support including:"
+      - list [ref=e71]:
+        - listitem [ref=e72]: Housing options assessment based on the patient's clinical needs and capacity
+        - listitem [ref=e73]: Crisis housing intervention for patients with no safe accommodation
+        - listitem [ref=e74]: Aged care placement assessment and family consultation
+        - listitem [ref=e75]: NCAT applications for guardianship and accommodation decisions
+      - heading "Family Liaison & Mediation" [level=2] [ref=e76]
+      - paragraph [ref=e77]: "Family dynamics can significantly impact discharge outcomes. Our social workers provide:"
+      - list [ref=e78]:
+        - listitem [ref=e79]: Clear, compassionate communication between families and hospital teams
+        - listitem [ref=e80]: Conflict resolution when families disagree on care plans
+        - listitem [ref=e81]: Support with complex decision-making around capacity and guardianship
+        - listitem [ref=e82]: Carer education and realistic expectations setting
+        - listitem [ref=e83]: Facilitation of family meetings with treating teams
+      - heading "Service Coordination" [level=2] [ref=e84]
+      - paragraph [ref=e85]: "We coordinate the full spectrum of community services to support a smooth transition, including:"
+      - list [ref=e86]:
+        - listitem [ref=e87]: Community mental health teams
+        - listitem [ref=e88]: NDIS providers and support coordinators
+        - listitem [ref=e89]: Aged care services and My Aged Care assessments
+        - listitem [ref=e90]: Home care packages
+        - listitem [ref=e91]: Specialist medical and allied health providers
+      - heading "Capacity Assessment" [level=2] [ref=e92]
+      - paragraph [ref=e93]: "When questions arise about a patient's decision-making capacity, we provide:"
+      - list [ref=e94]:
+        - listitem [ref=e95]: Clinical evaluation of decision-making capacity
+        - listitem [ref=e96]: NCAT guardianship application support when required
+        - listitem [ref=e97]: Collaboration with medical teams on capacity determinations
+      - heading "Post-Discharge Follow-Up" [level=2] [ref=e98]
+      - paragraph [ref=e99]: Our work does not end at discharge. We provide ongoing support to prevent readmission and ensure long-term stability.
+      - list [ref=e100]:
+        - listitem [ref=e101]: Community check-ins via phone, telehealth, or home visit
+        - listitem [ref=e102]: Crisis prevention and early intervention
+        - listitem [ref=e103]: Ongoing service coordination and advocacy
+        - listitem [ref=e104]: Connection to long-term supports and community programs
+      - generic [ref=e105]:
+        - heading "When to Refer" [level=3] [ref=e106]
+        - paragraph [ref=e107]: "Consider referring to Create Allied Health when a patient presents with:"
+        - list [ref=e108]:
+          - listitem [ref=e109]: Psychosocial barriers preventing safe discharge
+          - listitem [ref=e110]: Housing instability or homelessness risk
+          - listitem [ref=e111]: Mental health complications requiring community support planning
+          - listitem [ref=e112]: Family conflict impacting discharge decisions
+          - listitem [ref=e113]: Capacity concerns requiring formal assessment
+          - listitem [ref=e114]: Complex service coordination across multiple systems
+          - listitem [ref=e115]: NCAT or guardianship applications
+          - listitem [ref=e116]: Aged care placement needs
+          - listitem [ref=e117]: Substance use issues complicating discharge
+          - listitem [ref=e118]: Lack of support networks in the community
+      - heading "Funding" [level=2] [ref=e119]
+      - paragraph [ref=e120]: "Hospital discharge services can be funded through:"
+      - list [ref=e121]:
+        - listitem [ref=e122]: iCare (workers compensation and motor accident schemes)
+        - listitem [ref=e123]: WorkCover
+        - listitem [ref=e124]: Private hospital discharge budgets
+        - listitem [ref=e125]: Department of Veterans' Affairs (DVA)
+        - listitem [ref=e126]: Private fee-for-service
+      - heading "Response Times" [level=2] [ref=e127]
+      - list [ref=e128]:
+        - listitem [ref=e129]:
+          - strong [ref=e130]: "Urgent referrals:"
+          - text: Within 24 hours
+        - listitem [ref=e131]:
+          - strong [ref=e132]: "Standard referrals:"
+          - text: 48–72 hours
+  - generic [ref=e134]:
+    - generic [ref=e135]: Frequently Asked Questions
+    - heading "Common Questions" [level=2] [ref=e136]
+    - generic [ref=e137]:
+      - group [ref=e138]:
+        - generic "When should I contact a social worker for discharge planning?" [ref=e139] [cursor=pointer]
+      - group [ref=e140]:
+        - generic "Does NDIS cover hospital discharge planning?" [ref=e141] [cursor=pointer]
+      - group [ref=e142]:
+        - generic "Which Sydney hospitals do you work with?" [ref=e143] [cursor=pointer]
+      - group [ref=e144]:
+        - generic "What happens after hospital discharge?" [ref=e145] [cursor=pointer]
+  - generic [ref=e148]:
+    - generic [ref=e149]:
+      - heading "Need support?" [level=2] [ref=e150]
+      - paragraph [ref=e151]: Contact us to discuss how we can help, or refer a client directly.
+    - generic [ref=e152]:
+      - link "Call 1800 930 350" [ref=e153] [cursor=pointer]:
+        - /url: tel:1800930350
+      - link "Refer a Client" [ref=e154] [cursor=pointer]:
+        - /url: referrals.html
+  - contentinfo [ref=e155]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - link "Create Allied Health Services" [ref=e159] [cursor=pointer]:
+          - /url: index.html
+          - img "Create Allied Health Services" [ref=e160]
+        - paragraph [ref=e161]: Empower Your Journey
+      - generic [ref=e162]:
+        - link "About" [ref=e163] [cursor=pointer]:
+          - /url: about.html
+        - link "Services" [ref=e164] [cursor=pointer]:
+          - /url: ndis-services.html
+        - link "Referrals" [ref=e165] [cursor=pointer]:
+          - /url: referrals.html
+        - link "Careers" [ref=e166] [cursor=pointer]:
+          - /url: careers.html
+        - link "Blog" [ref=e167] [cursor=pointer]:
+          - /url: blog.html
+        - link "Contact" [ref=e168] [cursor=pointer]:
+          - /url: contact.html
+      - paragraph [ref=e170]: We acknowledge the Gadigal people of the Eora Nation as the traditional custodians of the land on which we work.
+      - paragraph [ref=e172]:
+        - text: © 2026 Create Allied Health Services Pty Ltd. All rights reserved. NDIS Registered Provider.
+        - link "Privacy Policy" [ref=e173] [cursor=pointer]:
+          - /url: privacy-policy.html

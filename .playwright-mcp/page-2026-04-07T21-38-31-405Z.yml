@@ -1,0 +1,247 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Create Allied Health Services" [ref=e4] [cursor=pointer]:
+        - /url: index.html
+        - img "Create Allied Health Services" [ref=e5]
+      - button "Toggle navigation" [active] [ref=e6] [cursor=pointer]
+      - list [ref=e193]:
+        - listitem [ref=e194]:
+          - link "About" [ref=e195] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e196]:
+          - link "Client Services" [ref=e197] [cursor=pointer]:
+            - /url: "#"
+            - text: Client Services
+            - img [ref=e198]
+        - listitem [ref=e200]:
+          - link "Professional" [ref=e201] [cursor=pointer]:
+            - /url: "#"
+            - text: Professional
+            - img [ref=e202]
+        - listitem [ref=e204]:
+          - link "Careers" [ref=e205] [cursor=pointer]:
+            - /url: careers.html
+        - listitem [ref=e206]:
+          - link "Blog" [ref=e207] [cursor=pointer]:
+            - /url: blog.html
+        - listitem [ref=e208]:
+          - link "Refer a Client" [ref=e209] [cursor=pointer]:
+            - /url: referrals.html
+  - banner [ref=e10]:
+    - generic [ref=e13]:
+      - navigation "Breadcrumb" [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Home" [ref=e17] [cursor=pointer]:
+              - /url: index.html
+          - listitem [ref=e18]:
+            - text: /
+            - link "Client Services" [ref=e19] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e20]:
+            - text: /
+            - generic [ref=e21]: NDIS Services
+      - heading "NDIS Services" [level=1] [ref=e22]
+  - generic [ref=e25]:
+    - complementary [ref=e26]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "NDIS Services" [ref=e30] [cursor=pointer]:
+            - /url: ndis-services.html
+        - listitem [ref=e31]:
+          - link "Hospital Discharge" [ref=e32] [cursor=pointer]:
+            - /url: hospital-discharge.html
+        - listitem [ref=e33]:
+          - link "Mental Health Support" [ref=e34] [cursor=pointer]:
+            - /url: mental-health-support.html
+        - listitem [ref=e35]:
+          - link "Housing & Accommodation" [ref=e36] [cursor=pointer]:
+            - /url: housing-support.html
+        - listitem [ref=e37]:
+          - link "Guardianship & NCAT" [ref=e38] [cursor=pointer]:
+            - /url: guardianship-ncat.html
+        - listitem [ref=e39]:
+          - link "Aged Care Transitions" [ref=e40] [cursor=pointer]:
+            - /url: aged-care-transitions.html
+        - listitem [ref=e41]:
+          - link "Psychosocial Support" [ref=e42] [cursor=pointer]:
+            - /url: psychosocial-support.html
+        - listitem [ref=e43]:
+          - link "iCare & WorkCover" [ref=e44] [cursor=pointer]:
+            - /url: icare-social-work.html
+      - generic [ref=e45]:
+        - heading "Get in Touch" [level=4] [ref=e46]
+        - paragraph [ref=e47]: 1800 930 350
+        - paragraph [ref=e48]: admin@createalliedhealth.com.au
+        - link "Refer a Client" [ref=e49] [cursor=pointer]:
+          - /url: referrals.html
+    - generic [ref=e50]:
+      - heading "Overview" [level=2] [ref=e51]
+      - paragraph [ref=e52]: Create Allied Health is an NDIS-registered therapeutic supports provider delivering comprehensive disability support across Sydney and nationally via telehealth. Our qualified clinical social workers work alongside occupational therapists, physiotherapists, and speech pathologists to deliver coordinated, person-centred care that empowers participants to achieve their goals.
+      - heading "NDIS Access Requests" [level=2] [ref=e53]
+      - paragraph [ref=e54]: Navigating the NDIS application process can be overwhelming. We provide expert support to help you access the scheme, including assistance for people who may not realise they are eligible.
+      - heading "Our Process" [level=3] [ref=e55]
+      - list [ref=e56]:
+        - listitem [ref=e57]: Comprehensive functional impact reports documenting how your disability affects daily life
+        - listitem [ref=e58]: Collaboration with your GPs, specialists, and treating teams to gather clinical evidence
+        - listitem [ref=e59]: Expert completion of all required NDIS access request forms
+        - listitem [ref=e60]: Advocacy and follow-up with the NDIA throughout the application process
+        - listitem [ref=e61]: Appeal support if your initial application is declined
+      - heading "Who Is Eligible?" [level=3] [ref=e62]
+      - paragraph [ref=e63]: "We assist a wide range of clients with NDIS access, including:"
+      - list [ref=e64]:
+        - listitem [ref=e65]: iCare clients transitioning to the NDIS
+        - listitem [ref=e66]: WorkCover clients seeking additional supports
+        - listitem [ref=e67]: Accident and injury insurance recipients
+        - listitem [ref=e68]: Private hospital patients with acquired disability
+        - listitem [ref=e69]: People living with psychosocial disability
+        - listitem [ref=e70]: People with traumatic brain injury (TBI)
+        - listitem [ref=e71]: People with spinal cord injury
+        - listitem [ref=e72]: Stroke survivors
+      - paragraph [ref=e73]:
+        - text: We also assist with
+        - strong [ref=e74]: Taxi Subsidy Scheme
+        - text: and
+        - strong [ref=e75]: Companion Card
+        - text: applications for eligible clients.
+      - heading "NDIS Therapeutic Supports" [level=2] [ref=e76]
+      - paragraph [ref=e77]: Our clinical social workers deliver therapeutic supports that address the psychosocial dimensions of disability, working in coordination with allied health professionals to ensure holistic care.
+      - heading "Social Work Services" [level=3] [ref=e78]
+      - list [ref=e79]:
+        - listitem [ref=e80]: Psychosocial assessment and intervention
+        - listitem [ref=e81]: Capacity building for daily living and community participation
+        - listitem [ref=e82]: Mental health support and wellbeing strategies
+        - listitem [ref=e83]: Risk assessment and safety planning
+        - listitem [ref=e84]: Housing navigation including SDA and SIL applications
+        - listitem [ref=e85]: Guardianship and NCAT support
+        - listitem [ref=e86]: Family therapy and systemic intervention
+        - listitem [ref=e87]: Systems navigation and service coordination
+      - heading "Coordinated Allied Health" [level=3] [ref=e88]
+      - paragraph [ref=e89]: We work alongside occupational therapists, physiotherapists, and speech pathologists to deliver integrated care across your NDIS plan.
+      - heading "NDIS Support Categories" [level=3] [ref=e90]
+      - list [ref=e91]:
+        - listitem [ref=e92]:
+          - strong [ref=e93]: Therapeutic Supports
+          - text: — Clinical interventions addressing psychosocial barriers
+        - listitem [ref=e94]:
+          - strong [ref=e95]: Capacity Building
+          - text: — Skills development for independence and participation
+        - listitem [ref=e96]:
+          - strong [ref=e97]: Improved Living Arrangements
+          - text: — Housing, SDA, and SIL support
+        - listitem [ref=e98]:
+          - strong [ref=e99]: Improved Relationships
+          - text: — Family therapy and social connection
+      - heading "How Social Work Is Funded Under the NDIS" [level=3] [ref=e100]
+      - paragraph [ref=e101]:
+        - text: Social work therapeutic supports are funded under the
+        - strong [ref=e102]: Capacity Building — Improved Daily Living
+        - text: "budget in your NDIS plan. As an AASW-registered provider, our services are billed under the NDIS Pricing Arrangements using the specific social worker line item:"
+      - list [ref=e103]:
+        - listitem [ref=e104]:
+          - strong [ref=e105]: Therapeutic Supports
+          - text: — Item 15_621_0128_1_3 — Assessment, Recommendation, Therapy or Training
+      - paragraph [ref=e106]:
+        - text: This means your social work sessions draw from your
+        - strong [ref=e107]: Capacity Building
+        - text: budget — not your Core supports. If you have Improved Daily Living funding in your plan, you can access our therapeutic supports.
+      - heading "Assessments We Provide" [level=3] [ref=e108]
+      - paragraph [ref=e109]: "Our clinical social workers are qualified to conduct a range of NDIS-relevant assessments, including:"
+      - list [ref=e110]:
+        - listitem [ref=e111]: Psychosocial Assessments
+        - listitem [ref=e112]: Functional Capacity Assessments
+        - listitem [ref=e113]: Needs Assessments
+        - listitem [ref=e114]: Risk Assessments
+        - listitem [ref=e115]: Social Functioning Assessments
+        - listitem [ref=e116]: Independent Living Audits
+        - listitem [ref=e117]: Environmental and Carer Assessments
+        - listitem [ref=e118]: Behaviour Assessments
+      - paragraph [ref=e119]:
+        - text: These assessments inform recommendations for therapeutic supports, plan reviews, and access requests. Refer to the
+        - link "Australian Association of Social Workers" [ref=e120] [cursor=pointer]:
+          - /url: https://www.aasw.asn.au
+        - text: for more information about social workers in the NDIS.
+      - heading "Plan Reviews & Planning Meeting Support" [level=2] [ref=e121]
+      - paragraph [ref=e122]: We provide expert clinical support to ensure your NDIS plan reflects your true needs and goals.
+      - heading "What We Provide" [level=3] [ref=e123]
+      - list [ref=e124]:
+        - listitem [ref=e125]: Thorough preparation before your planning meeting
+        - listitem [ref=e126]: Attendance at planning meetings with clinical advocacy
+        - listitem [ref=e127]: Clinical evidence reports and supporting documentation
+        - listitem [ref=e128]: Plan review advocacy for underfunded or inadequate plans
+        - listitem [ref=e129]: Funding advice and budget utilisation strategies
+      - heading "Ideal For" [level=3] [ref=e130]
+      - list [ref=e131]:
+        - listitem [ref=e132]: Participants with complex needs requiring detailed clinical justification
+        - listitem [ref=e133]: Housing and SDA applications needing specialist evidence
+        - listitem [ref=e134]: Support coordinators seeking clinical backup for plan reviews
+      - heading "Billing" [level=2] [ref=e135]
+      - paragraph [ref=e136]: "We work with all NDIS payment arrangements:"
+      - list [ref=e137]:
+        - listitem [ref=e138]:
+          - strong [ref=e139]: Plan-managed
+          - text: participants
+        - listitem [ref=e140]:
+          - strong [ref=e141]: Self-managed
+          - text: participants
+        - listitem [ref=e142]:
+          - strong [ref=e143]: NDIA-managed
+          - text: participants
+      - heading "Service Delivery" [level=2] [ref=e144]
+      - list [ref=e145]:
+        - listitem [ref=e146]:
+          - strong [ref=e147]: In-person
+          - text: — Face-to-face appointments across the Sydney metropolitan area
+        - listitem [ref=e148]:
+          - strong [ref=e149]: Telehealth
+          - text: — Secure video consultations available nationally
+        - listitem [ref=e150]:
+          - strong [ref=e151]: Home & community visits
+          - text: — Outreach to homes, hospitals, and community settings
+  - generic [ref=e153]:
+    - generic [ref=e154]: Frequently Asked Questions
+    - heading "Common Questions" [level=2] [ref=e155]
+    - generic [ref=e156]:
+      - group [ref=e157]:
+        - generic "How do I make an NDIS access request?" [ref=e158] [cursor=pointer]
+      - group [ref=e159]:
+        - generic "What allied health services are covered by NDIS?" [ref=e160] [cursor=pointer]
+      - group [ref=e161]:
+        - generic "Can you help with NDIS plan reviews?" [ref=e162] [cursor=pointer]
+      - group [ref=e163]:
+        - generic "Are you a registered NDIS provider?" [ref=e164] [cursor=pointer]
+  - generic [ref=e167]:
+    - generic [ref=e168]:
+      - heading "Need support?" [level=2] [ref=e169]
+      - paragraph [ref=e170]: Contact us to discuss how we can help, or refer a client directly.
+    - generic [ref=e171]:
+      - link "Call 1800 930 350" [ref=e172] [cursor=pointer]:
+        - /url: tel:1800930350
+      - link "Refer a Client" [ref=e173] [cursor=pointer]:
+        - /url: referrals.html
+  - contentinfo [ref=e174]:
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - link "Create Allied Health Services" [ref=e178] [cursor=pointer]:
+          - /url: index.html
+          - img "Create Allied Health Services" [ref=e179]
+        - paragraph [ref=e180]: Empower Your Journey
+      - generic [ref=e181]:
+        - link "About" [ref=e182] [cursor=pointer]:
+          - /url: about.html
+        - link "Services" [ref=e183] [cursor=pointer]:
+          - /url: ndis-services.html
+        - link "Referrals" [ref=e184] [cursor=pointer]:
+          - /url: referrals.html
+        - link "Careers" [ref=e185] [cursor=pointer]:
+          - /url: careers.html
+        - link "Blog" [ref=e186] [cursor=pointer]:
+          - /url: blog.html
+        - link "Contact" [ref=e187] [cursor=pointer]:
+          - /url: contact.html
+      - paragraph [ref=e189]: We acknowledge the Gadigal people of the Eora Nation as the traditional custodians of the land on which we work.
+      - paragraph [ref=e191]:
+        - text: © 2026 Create Allied Health Services Pty Ltd. All rights reserved. NDIS Registered Provider.
+        - link "Privacy Policy" [ref=e192] [cursor=pointer]:
+          - /url: privacy-policy.html

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Keyword Validation Report — Create Allied Health</title>
+<style>
+  @page { size: A4; margin: 16mm 18mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; padding: 32px; max-width: 800px; margin: 0 auto; font-size: 10px; line-height: 1.45; }
+
+  .header { border-bottom: 3px solid #e85d26; padding-bottom: 12px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .header h1 { font-size: 18px; color: #1a1a1a; }
+  .header .meta { font-size: 9px; color: #999; text-align: right; }
+
+  .callout { background: #fef3f0; border-left: 4px solid #e85d26; padding: 10px 14px; margin-bottom: 16px; border-radius: 0 5px 5px 0; }
+  .callout p { font-size: 10px; color: #4a1a0a; }
+  .callout strong { color: #c0391b; }
+
+  h2 { font-size: 12px; color: #1a1a1a; margin: 14px 0 6px; padding-bottom: 3px; border-bottom: 1px solid #ddd; }
+
+  table { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 9.5px; }
+  th { background: #2c2c2c; color: #fff; text-align: left; padding: 5px 8px; font-weight: 600; font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.3px; }
+  td { padding: 4px 8px; border-bottom: 1px solid #e8e8e8; }
+  tr:nth-child(even) { background: #f9f9f9; }
+
+  .vol { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .cpc { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .use { background: #e6f4ea !important; }
+  .use td { color: #0a5c2f; }
+  .skip { }
+  .skip td { color: #888; }
+
+  .tag { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 8px; font-weight: 700; text-transform: uppercase; }
+  .tag-use { background: #0a7c42; color: #fff; }
+  .tag-skip { background: #ddd; color: #666; }
+  .tag-maybe { background: #fff3e0; color: #b8860b; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 12px; }
+
+  .rec-box { background: #f0f7f4; border: 1px solid #b8e0c8; border-radius: 5px; padding: 10px 12px; }
+  .rec-box h3 { font-size: 10px; color: #0a7c42; margin-bottom: 5px; }
+  .rec-box ul { margin: 0; padding-left: 14px; font-size: 9.5px; }
+  .rec-box li { margin-bottom: 2px; }
+
+  .warn-box { background: #fef3f0; border: 1px solid #f0c0b0; border-radius: 5px; padding: 10px 12px; }
+  .warn-box h3 { font-size: 10px; color: #c0391b; margin-bottom: 5px; }
+  .warn-box ul { margin: 0; padding-left: 14px; font-size: 9.5px; }
+  .warn-box li { margin-bottom: 2px; }
+
+  .summary-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .stat { background: #f5f5f5; border-radius: 5px; padding: 10px; text-align: center; }
+  .stat .num { font-size: 24px; font-weight: 700; }
+  .stat .num.green { color: #0a7c42; }
+  .stat .num.red { color: #c0391b; }
+  .stat .num.grey { color: #999; }
+  .stat .label { font-size: 8.5px; color: #666; margin-top: 1px; }
+
+  .footer { margin-top: 12px; padding-top: 8px; border-top: 1px solid #ddd; font-size: 8px; color: #999; }
+
+  @media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Keyword Validation: Suggested vs. Actual Search Data</h1>
+  <div class="meta">Create Allied Health Services<br>7 April 2026 | DataForSEO Live API (Google AU)</div>
+</div>
+
+<div class="callout">
+  <p>Of <strong>20 suggested keyword phrases</strong>, only <strong>6 have any measurable search volume</strong> in Australia. The remaining 14 are industry/clinical jargon that practitioners use but the public does not search for. Building pages around zero-volume terms wastes effort and dilutes topical focus.</p>
+</div>
+
+<div class="summary-row">
+  <div class="stat"><div class="num green">6</div><div class="label">Keywords with Volume<br>(Use These)</div></div>
+  <div class="stat"><div class="num red">14</div><div class="label">Keywords with Zero Volume<br>(Skip These)</div></div>
+  <div class="stat"><div class="num grey">1,670</div><div class="label">Total Monthly Searches<br>(Validated Keywords)</div></div>
+</div>
+
+<h2>Keywords With Search Volume — Use These</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th style="text-align:right">Monthly Vol.</th>
+      <th style="text-align:right">CPC</th>
+      <th>SERP Landscape</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="use">
+      <td><strong>ndis capacity building</strong></td>
+      <td class="vol">590</td>
+      <td class="cpc">$6.35</td>
+      <td>ndis.gov.au + plan managers — informational</td>
+      <td><span class="tag tag-use">Use</span></td>
+    </tr>
+    <tr class="use">
+      <td><strong>ndis therapeutic supports</strong></td>
+      <td class="vol">260</td>
+      <td class="cpc">$13.73</td>
+      <td>ndis.gov.au + large providers — AI Overview</td>
+      <td><span class="tag tag-use">Use</span></td>
+    </tr>
+    <tr class="use">
+      <td><strong>ndis social worker</strong></td>
+      <td class="vol">260</td>
+      <td class="cpc">$6.40</td>
+      <td>Provider sites — commercial intent</td>
+      <td><span class="tag tag-use">Use</span></td>
+    </tr>
+    <tr class="use">
+      <td><strong>ndis community participation</strong></td>
+      <td class="vol">260</td>
+      <td class="cpc">$1.98</td>
+      <td>Support worker / day program sites</td>
+      <td><span class="tag tag-maybe">Maybe</span></td>
+    </tr>
+    <tr class="use">
+      <td><strong>ndis capacity building supports</strong></td>
+      <td class="vol">210</td>
+      <td class="cpc">$12.76</td>
+      <td>ndis.gov.au + explainer sites</td>
+      <td><span class="tag tag-use">Use</span></td>
+    </tr>
+    <tr class="use">
+      <td><strong>ndis social worker sydney</strong></td>
+      <td class="vol">70</td>
+      <td class="cpc">—</td>
+      <td>Provider sites — high intent, local</td>
+      <td><span class="tag tag-use">Use</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Keywords With Zero Volume — Do Not Target in Headings or Titles</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th style="text-align:right">Vol.</th>
+      <th>Why It Doesn't Work</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="skip"><td>ndis therapeutic supports sydney</td><td class="vol">0</td><td>People don't add "sydney" to this search</td></tr>
+    <tr class="skip"><td>therapeutic supports social work</td><td class="vol">0</td><td>Practitioner language, not search language</td></tr>
+    <tr class="skip"><td>psychosocial capacity building ndis</td><td class="vol">0</td><td>Too specific — nobody searches this</td></tr>
+    <tr class="skip"><td>social worker for ndis participants</td><td class="vol">0</td><td>People search "ndis social worker" instead</td></tr>
+    <tr class="skip"><td>ndis emotional regulation support</td><td class="vol">0</td><td>Clinical jargon — zero search demand</td></tr>
+    <tr class="skip"><td>disability support social worker sydney</td><td class="vol">0</td><td>Not how users phrase this query</td></tr>
+    <tr class="skip"><td>trauma-informed ndis social work</td><td class="vol">0</td><td>Practitioner framework, not user search</td></tr>
+    <tr class="skip"><td>ndis functional capacity building</td><td class="vol">0</td><td>People search "ndis capacity building" instead</td></tr>
+    <tr class="skip"><td>social work for psychosocial disability</td><td class="vol">0</td><td>Zero demand — use "psychosocial support ndis" (30/mo)</td></tr>
+    <tr class="skip"><td>accredited social worker ndis</td><td class="vol">0</td><td>Nobody searches by accreditation type</td></tr>
+    <tr class="skip"><td>ndis self advocacy</td><td class="vol">0</td><td>Zero volume — fine as body copy only</td></tr>
+    <tr class="skip"><td>ndis emotional support</td><td class="vol">0</td><td>Too vague — no search intent</td></tr>
+    <tr class="skip"><td>person centred ndis support</td><td class="vol">0</td><td>Industry buzzword, not a search query</td></tr>
+    <tr class="skip"><td>therapeutic intervention ndis</td><td class="vol">0</td><td>Use "ndis therapeutic supports" instead</td></tr>
+  </tbody>
+</table>
+
+<div class="two-col">
+  <div class="rec-box">
+    <h3>Recommended: Work Into the Site</h3>
+    <ul>
+      <li><strong>"NDIS therapeutic supports"</strong> — into ndis-services.html title, H1, and meta description</li>
+      <li><strong>"NDIS capacity building"</strong> — into service descriptions + new blog post</li>
+      <li><strong>"NDIS social worker"</strong> — broader variant into supporting copy</li>
+      <li><strong>"NDIS social worker Sydney"</strong> — already targeted, needs backlinks not copy</li>
+      <li>Use zero-volume terms as natural body copy only — never as headings or title tags</li>
+    </ul>
+  </div>
+  <div class="warn-box">
+    <h3>Do Not Build Headings or Pages Around</h3>
+    <ul>
+      <li>Emotional regulation, self-advocacy, person-centred — zero volume</li>
+      <li>Trauma-informed, functional capacity building — practitioner-only terms</li>
+      <li>"NDIS therapeutic supports Sydney" — the location variant has zero volume</li>
+      <li>"NDIS community participation" — volume exists but intent is day programs, not social work</li>
+      <li>Keep existing GBP description — it targets real services people search for</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  Prepared by Arclight Digital | Data: DataForSEO Live API, Google AU (location 2036) | 7 April 2026
+</div>
+
+</body>
+</html>
