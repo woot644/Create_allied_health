@@ -184,7 +184,7 @@ All blocks should be added via Squarespace's **Settings > Advanced > Code Inject
   },
   "image": "https://images.squarespace-cdn.com/content/v1/6510f5d30064772b66aed216/4170c623-6c3a-4aa7-9025-5e288f2b625f/Create+Allied+Health+Logo.png",
   "description": "NDIS-registered clinical social work and allied health provider. Specialising in psychosocial assessment, hospital discharge planning, housing support, guardianship and NCAT matters, mental health services, aged care transitions, and clinical supervision. Serving Sydney and nationally across Australia.",
-  "telephone": "+611800930350",
+  "telephone": "1800 930 350",
   "email": "admin@createalliedhealth.com.au",
   "address": {
     "@type": "PostalAddress",
@@ -236,7 +236,7 @@ All blocks should be added via Squarespace's **Settings > Advanced > Code Inject
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+611800930350",
+      "telephone": "1800 930 350",
       "contactType": "customer service",
       "email": "admin@createalliedhealth.com.au",
       "areaServed": "AU",
@@ -244,7 +244,7 @@ All blocks should be added via Squarespace's **Settings > Advanced > Code Inject
     },
     {
       "@type": "ContactPoint",
-      "telephone": "+611800930350",
+      "telephone": "1800 930 350",
       "contactType": "referral",
       "areaServed": "AU",
       "availableLanguage": "English"

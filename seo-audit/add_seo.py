@@ -178,7 +178,7 @@ def build_sitewide_schema():
       "legalName": "Create Allied Health Services Pty Ltd",
       "url": "https://www.createalliedhealth.com.au",
       "description": "NDIS-registered clinical social work and allied health provider specialising in psychosocial assessment, hospital discharge planning, housing support, guardianship, aged care transitions, and mental health services in Sydney and nationally across Australia.",
-      "telephone": "+611800930350",
+      "telephone": "1800 930 350",
       "email": "admin@createalliedhealth.com.au",
       "address": {
         "@type": "PostalAddress",
@@ -217,7 +217,7 @@ def build_sitewide_schema():
       "url": "https://www.createalliedhealth.com.au",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+611800930350",
+        "telephone": "1800 930 350",
         "contactType": "customer service",
         "email": "admin@createalliedhealth.com.au",
         "areaServed": "AU",
